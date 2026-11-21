@@ -1,0 +1,48 @@
+
+=====================================================================
+ NORMAL DEPTH BY THE NEWTON-RAPHSON METHOD - RESULTS
+=====================================================================
+ INPUT DATA (SI units)
+   Channel shape ......................... Trapezoidal
+   Discharge, Q .......................... 25.0000 m^3/s
+   Bottom width, b ....................... 6.0000 m
+   Side slope, z (H:V) ................... 1.5000
+   Manning's n ........................... 0.0250
+   Bed slope, S0 ......................... 0.000400
+ SOLVER SETTINGS
+   Initial guess, y0 ..................... 2.6917 m (automatic)
+   Significant figures ................... 6  (es = 5e-05 %)
+   Maximum iterations .................... 50
+
+ NEWTON-RAPHSON ITERATIONS FOR NORMAL DEPTH, yn
+ Iter     y_i (m)         f(y_i)        f'(y_i)     y_i+1 (m)       ea (%)
+   1     2.69165419    6.03177e+00    2.21942e+01     2.41988213    1.1231e+01
+   2     2.41988213    3.16703e-01    1.98764e+01     2.40394849    6.6281e-01
+   3     2.40394849    1.06405e-03    1.97429e+01     2.40389460    2.2420e-03
+   4     2.40389460    1.21581e-08    1.97424e+01     2.40389460    2.5618e-08
+
+ NEWTON-RAPHSON ITERATIONS FOR CRITICAL DEPTH, yc
+ Iter     y_i (m)        fc(y_i)       fc'(y_i)     y_i+1 (m)       ea (%)
+   1     1.20958438    2.39939e+01    2.40704e+02     1.10990192    8.9812e+00
+   2     1.10990192    2.28242e+00    1.95899e+02     1.09825092    1.0609e+00
+   3     1.09825092    2.83585e-02    1.91044e+02     1.09810248    1.3518e-02
+   4     1.09810248    4.55379e-06    1.90983e+02     1.09810245    2.1714e-06
+
+ HYDRAULIC RESULTS
+   Normal depth, yn ...................... 2.403895 m  (4 iterations)
+   Critical depth, yc .................... 1.098102 m  (4 iterations)
+   Flow area, A .......................... 23.0914 m^2
+   Wetted perimeter, P ................... 14.6674 m
+   Hydraulic radius, R = A/P ............. 1.5743 m
+   Top width, T .......................... 13.2117 m
+   Mean velocity, V = Q/A ................ 1.0827 m/s
+   Hydraulic depth, D = A/T .............. 1.7478 m
+   Froude number, Fr ..................... 0.2615
+   Specific energy, E .................... 2.4636 m
+   Flow regime ........................... Subcritical / tranquil flow (Fr < 1)
+   Channel slope type .................... Mild slope, M  (yn > yc)
+
+ VERIFICATION
+   Q recomputed from yn .................. 25.000000 m^3/s  (error 4.26e-14 %)
+   MATLAB fzero solution ................. 2.403895 m  (difference 7.39e-14 %)
+=====================================================================

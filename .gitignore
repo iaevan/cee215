@@ -1,0 +1,15 @@
+# MATLAB / Octave
+*.asv
+*.m~
+*.mex*
+octave-workspace
+slprj/
+
+# Office lock / temp files
+~$*.docx
+~$*.pptx
+.~lock.*
+
+# OS
+.DS_Store
+Thumbs.db
